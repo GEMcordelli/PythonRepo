@@ -1,0 +1,7 @@
+import matplotlib
+
+aslist = [random.randint(1,20) for i in range(15)]
+
+plt.hist(aslist, bins=None)
+
+** sudo code because using vscode web browser
