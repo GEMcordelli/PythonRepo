@@ -1,0 +1,42 @@
+Question 1:
+
+def multiples(m, count):
+    for i in range(count):
+        print(i * m, end=' ')
+
+
+
+sum1 = multiples(3, 1000)
+sum2 = multiples(5, 1000)
+sum3 = sum1 + sum2
+
+Question 2:
+
+def fibonacci(n):
+    num1, num2 = 0, 1
+    for _ in range(n):
+        print(num2, end=" ")
+        num1, num2 = num2, num1 + num2
+    print()
+
+fibonacci(20)
+
+fibonacci(40)
+
+Question 3:
+
+import math
+
+def primeFactors(n):
+    while n % 2 == 0:
+        print(2)
+        n //= 2
+
+    for i in range(3, int(math.sqrt(n)) + 1, 2):
+        while n % i == 0:
+            print(i)
+            n //= i
+
+    if n > 2:
+        print(n)
+  
